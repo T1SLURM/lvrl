@@ -1,24 +1,47 @@
-# Catálogo de Productos - Laravel
+# 🛒 Catálogo de Productos - Laravel
 
-Proyecto CRUD desarrollado con Laravel y MySQL usando XAMPP.
+Sistema CRUD desarrollado con **Laravel**, **MySQL** y **Bootstrap 5**.  
+Permite gestionar un catálogo de productos con operaciones completas de creación, edición, eliminación y visualización.
 
-## Tecnologías
-- PHP
-- Laravel
-- MySQL
-- XAMPP
-- Git
+---
 
-## Funcionalidades
-- Crear productos
-- Listar productos
-- Editar productos
-- Eliminar productos
+## 📌 Características
 
-## Instalación
+✔ Crear productos  
+✔ Listar productos  
+✔ Editar productos  
+✔ Eliminar productos  
+✔ Visualización de ID y fechas (created_at / updated_at)  
+✔ Interfaz moderna con Bootstrap 5  
+✔ Uso de Eloquent ORM  
 
-1. Clonar repositorio
-2. Ejecutar composer install
-3. Configurar archivo .env
-4. Ejecutar php artisan migrate
-5. Ejecutar php artisan serve
+---
+
+## 🛠 Tecnologías Utilizadas
+
+| Tecnología | Versión |
+|------------|----------|
+| PHP | 8.x |
+| Laravel | 10.x |
+| MySQL | 8.x |
+| XAMPP | 8.x |
+| Composer | 2.x |
+| Bootstrap | 5.3 |
+
+---
+
+## ⚙️ Requisitos Previos
+
+- Tener instalado **XAMPP**
+- Tener instalado **Composer**
+- Tener Git instalado
+- PHP habilitado en el PATH (o usar `C:\xampp\php\php.exe`)
+
+---
+
+## 🚀 Instalación del Proyecto
+
+### 1️⃣ Clonar el repositorio
+
+```bash
+git clone https://github.com/tu-usuario/catalogo.git
