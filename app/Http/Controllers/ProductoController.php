@@ -46,24 +46,29 @@ class ProductoController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Producto $producto)
+    public function edit($id)
     {
-        //
+        $producto = Producto::findOrFail($id);
+        return view('productos.edit', compact('producto'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Producto $producto)
+    public function update(Request $request, $id)
     {
-        //
+        $producto = Producto::findOrFail($id);
+        $producto->update($request->all());
+        return redirect()->route('productos.index');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Producto $producto)
+    public function destroy($id)
     {
-        //
+        $producto = Producto::findOrFail($id);
+        $producto->delete();
+        return redirect()->route('productos.index');
     }
 }
